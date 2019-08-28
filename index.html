@@ -1,0 +1,20 @@
+<html>
+    <script type="text/javascript" src="reqwest.min.js"></script>
+    <script>
+        window.onload = function() {
+            reqwest({
+                url: 'http://localhost:8082/health'
+              , method: 'get'
+              , success: function (resp) {
+                  console.log(resp)
+                }
+            });
+        }
+    </script>
+    <head>
+        <title>hello</title>
+    </head>
+    <body>
+        hello, world
+    </body>
+</html>
